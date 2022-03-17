@@ -1,0 +1,25 @@
+{
+  "name": "week7-js-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "parcel": "^2.3.2"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost:1234/"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1"
+  }
+}
