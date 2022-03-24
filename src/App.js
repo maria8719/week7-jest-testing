@@ -20,6 +20,7 @@ export function highestScore(students) {
   
     return result;
   }
+// ********************************************************** Week 7 Lab *************************************************************************
 
   export function factorial(n) {
     if ((n === 0) || (n === 1))
