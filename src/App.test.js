@@ -1,4 +1,4 @@
-import { add, total, highestScore } from './App';
+import { add, total, highestScore, factorial } from './App';
 
 // https://jestjs.io/docs/expect#expectvalue
 // The expect function is used every time you want to test a value.
@@ -46,8 +46,6 @@ test('highest score', () => {
   const result = highestScore(students);
   expect(result).toEqual({ name: 'Shane Carey', score: 9.5 });
 });
-
-
 // Integration test - testing a function that relies on another function (multiple things)
 //  - testing add() then total() function
 //  - benefit of more detailed function testing
@@ -56,3 +54,26 @@ test('total', () => {
   expect(total(2, 10)).toBe('$12');
   expect(total(8, 50)).toBe('$58');
 });
+
+// ********************************************************** Week 7 Lab *************************************************************************
+
+// test factorial function
+test('factorial - if function defined?', () => {
+  expect(factorial).toBeDefined(); 
+});
+
+// test factorial function
+test('factorial - is function returning a value?', () => {
+  expect(factorial(0)).toBeDefined();
+});
+
+// test factorial function
+
+test('factorial number: verify correct return values',()=>{
+    
+     expect(factorial(1)).toBe(1);
+     expect(factorial(3)).toBe(6);
+});
+
+
+
