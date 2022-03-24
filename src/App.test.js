@@ -64,7 +64,7 @@ test('factorial - if function defined?', () => {
 
 // test factorial function
 test('factorial - is function returning a value?', () => {
-  expect(factorial(0)).toBeDefined();
+  expect(factorial(6)).toBeDefined();
 });
 
 // test factorial function
